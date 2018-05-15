@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Unit-4 Game</title>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- Bring in bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ 
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+
+    <h1 class="text-left">CrystalsCollector!</h1>
+
+    <div class="text-left">
+      <p>You will be given a random number at the start of the game.
+      </p>
+
+      <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+
+      <p> You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+
+      <p> The value of each crystal is hidden from you until you click on it.</p>
+
+      <p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+    </div>
+
+    
+    <div class="text-left"> 
+          
+      <div class="btn btn-primary btn-lg fa fa-question">Random Number
+        <div id="computerScore" ></div>
+      </div>
+   
+    </div>
+
+    <div class="text-center"> 
+      <div id="game">
+          <p>wins: <span id="wins"></span></p>
+          <p>losses: <span id="losses"></span></p>
+    
+        </div>
+
+        <div class="btn btn-primary btn-lg fa fa-question">Total Score
+          <div id="totalScore" ></div>
+        </div>
+          <div>
+            <button id="ruby"><img src=" " width="100px" >ruby</button>
+            <button id="diamond"><img src=" " width="100px" >diamond</button>
+            <button id="yellowGem"><img src=" " width="100px" >Yellow Gem</button>
+            <button id="greenGem"><img src=" " width="100px" >Green Gem</button>
+          </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <script src="assets\javascript\game.js"></script>  
+   
+  
+
+</body>
+</html>
